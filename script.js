@@ -88,7 +88,7 @@ window.addEventListener('scroll', () => {
 // Intersection Observer pour les animations au scroll
 const observerOptions = {
     threshold: 0.01,
-    rootMargin: '0px 0px -8px 0px'
+    rootMargin: '-80px 0px -8px 0px'
 };
 
 const fadeInObserver = new IntersectionObserver((entries) => {
