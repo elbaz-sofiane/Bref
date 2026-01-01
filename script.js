@@ -87,7 +87,7 @@ window.addEventListener('scroll', () => {
 
 // Intersection Observer pour les animations au scroll
 const observerOptions = {
-    threshold: 0.1,
+    threshold: 0.01,
     rootMargin: '0px 0px -8px 0px'
 };
 
@@ -103,7 +103,7 @@ const fadeInObserver = new IntersectionObserver((entries) => {
 // Observer les cartes de services
 document.querySelectorAll('.service-card').forEach((card, index) => {
     card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
+    card.style.transform = 'translateY(3px)';
     card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
     fadeInObserver.observe(card);
 });
